@@ -105,7 +105,7 @@
   background-color: #5b5be3;
   color: #fff;
   font-size: 16px;
-  border-radius: 47rpx;
+  border-radius: 100rpx;
 }
 .desc-text-new {
   margin-top: 12px;

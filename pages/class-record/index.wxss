@@ -221,3 +221,9 @@ page {
   flex: 1;
 
 }
+
+.common-main {
+  width: 90%;
+  border-radius: 20rpx;
+  overflow: hidden;
+}

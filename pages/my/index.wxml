@@ -5,7 +5,7 @@
   <view class="mine" style="">
     <view class="mine-name" bindtap='toPage' data-url='/pages/my/info'>
        <view class='minepic'>
-          <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          <image src='/images/user_avator.png'></image>
         </view>
       <text>袁行</text>
     </view>

@@ -45,8 +45,8 @@
               </view>
             </view>
           </view>
-          <view class='y1' wx:if="{{list.status==1}}" catchtap='getTeacheridDetail' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")' data-id="{{list.courseId}}">点名            </view>
-           <view class='y1' wx:if="{{list.status==0}}" catchtap='getTeacheridDetail' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")' data-id="{{list.courseId}}">进行中            </view>
+          <view class='y1' wx:if="{{list.status==1}}" catchtap='getTeacheridDetail' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")' data-id="{{list.courseId}}">点名</view>
+           <view class='y1' wx:if="{{list.status==0}}" catchtap='getTeacheridDetail' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")' data-id="{{list.courseId}}">点名</view>
         </view>
         </block> 
   <!-- <block wx:for="{{caselist}}" wx:for-item="list" wx:key="unique">

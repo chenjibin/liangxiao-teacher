@@ -1,7 +1,7 @@
 import request from './request.js'
 class apis {
   constructor() {
-    this._baseUrl = 'http://zxkwxtest.s1.natapp.cc/xcx/'
+    this._baseUrl = 'https://www.keshiguanjia.com/api/'
     this._defaultHeader = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
@@ -46,7 +46,13 @@ class apis {
    * 课程列表（时间倒序）
    */
   courseList() {
-    return this._request.postRequest(this._baseUrl + 'teacherManage/getTeacherCourselog(有同名方法)', data).then(res => res.data)
+    return this._request.postRequest(this._baseUrl + 'teacherManage/getTeacherCourselog', data).then(res => res.data)
+  }
+  /**
+   * 注册）
+   */
+  register(data) {
+    return this._request.postRequest(this._baseUrl + 'sign/up/organizer', data).then(res => res.data)
   }
   /**
    * 首页

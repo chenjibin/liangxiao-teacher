@@ -1,4 +1,6 @@
 // pages/register/index.js
+const app = getApp();
+const { $Toast } = require('../../libs/iview/base/index');
 Page({
 
   /**
@@ -7,15 +9,16 @@ Page({
   data: {
     canGet: true,
     setTime: 30,
-    timmer: null
+    timmer: null,
+    phoneNumber: ''
   },
   getCodeHandle() {
-    // if (!this.data.phoneNumber) {
-    //   $Toast({
-    //     content: '请输入手机号'
-    //   });
-    //   return
-    // }
+    if (!this.data.phoneNumber) {
+      $Toast({
+        content: '请输入手机号'
+      });
+      return
+    }
     if (this.data.canGet) {
       this.setData({
         canGet: false,
@@ -36,43 +39,54 @@ Page({
       }, 1000)
     }
   },
+  phoneChangeHander({ detail }) {
+    const phoneNumber = detail.value
+    this.setData({
+      phoneNumber,
+    })
+  },
   formSubmit({ detail }) {
     const sendData = detail.value;
-      wx.redirectTo({
-        url: './success'
-      })
-    // if (!sendData.phone) {
-    //   $Toast({
-    //     content: '手机号码不能为空！'
-    //   });
-    //   return
-    //   // wx.switchTab({
-    //   //   url: '/pages/home/index'
-    //   // })
-    // }
-    // if (!sendData.verifyCode) {
-    //   $Toast({
-    //     content: '验证码不能为空！'
-    //   });
-    //   return
-    // }
-    // if (!sendData.companyId) {
-    //   $Toast({
-    //     content: '机构不能为空！'
-    //   });
-    //   return
-    // }
-    app.apis.userLogin(sendData).then(res => {
+    console.log(sendData)
+      // wx.redirectTo({
+      //   url: './success'
+      // })
+    if (!sendData.name) {
+      $Toast({
+        content: '学校/公司名称不能为空！'
+      });
+      return
+    }
+    if (!sendData.phone) {
+      $Toast({
+        content: '手机号码不能为空！'
+      });
+      return
+    }
+    if (!sendData.vcode) {
+      $Toast({
+        content: '验证码不能为空！'
+      });
+      return
+    }
+    if (!sendData.password) {
+      $Toast({
+        content: '密码不能为空！'
+      });
+      return
+    }
+    app.apis.register(sendData).then(res => {
       if (res.code) {
-
+         wx.redirectTo({
+          url: './success'
+        })
+      } else {
+        $Toast({
+          content: res.msg
+        });
       }
       console.log(res)
     })
-    // else {
-    //   wx.navigateTo({
-    //     url: './error'
-    //   })
-    // }
   },
   /**
    * 生命周期函数--监听页面加载

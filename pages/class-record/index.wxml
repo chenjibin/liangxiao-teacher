@@ -1,9 +1,9 @@
 <!--pages/class-record/index.wxml-->
 <view class='class-record-page'>
   <view class='top-area'>
-    <view class='btn-wrap'>
+    <view class='btn-wrap' bindtap='commonOpenHandler'>
       <view class='inner-content'>
-        <text>全部课程</text>
+        <text>{{filterTitle}}</text>
       </view>
       <view class='right-icon'>
         <image src='../../images/arrow-right-light.png'></image>
@@ -34,4 +34,9 @@
   <view class='bottom-area'>
    <class-record recordData='{{courseRecord}}'></class-record>
   </view>
+  <fs-modal visible="{{ commomViisible }}" bind:mask-close='closeMask'>
+    <view class='common-main' catchtap='cancelClickUp'>
+      <fs-radio-group itemData="{{keshiData}}" value="{{keshiValue}}" bind:item-change='keshiChange' ></fs-radio-group>
+    </view>
+  </fs-modal>
 </view>

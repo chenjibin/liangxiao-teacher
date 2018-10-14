@@ -4,6 +4,8 @@
   "navigationBarTitleText": "上课记录",
   "usingComponents": {
     "fs-date-picker": "../../compoments/fs-date-picker/index",
-    "class-record": "../../compoments/class-record/index"
+    "class-record": "../../compoments/class-record/index",
+    "fs-modal": "../../compoments/fs-modal/index",
+    "fs-radio-group": "../../compoments/fs-radio-group/index"
   }
 }

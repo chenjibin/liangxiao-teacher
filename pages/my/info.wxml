@@ -5,7 +5,7 @@
       <text>头像</text>
     </view>
     <view class='avator'>
-      <image src='{{testImg}}'></image>
+      <image src='/images/user_avator.png'></image>
     </view>
     <view class='right-icon-wrap'>
       <image src='../../images/arrow-right-dark.png'></image>

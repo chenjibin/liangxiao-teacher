@@ -22,7 +22,6 @@ Component({
    */
   methods: {
     closeHandler(event) {
-      console.log(event)
       this.triggerEvent('mask-close');
     }
   }
