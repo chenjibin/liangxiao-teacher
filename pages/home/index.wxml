@@ -49,8 +49,8 @@
            <view class='y1' wx:if="{{list.status==0}}" catchtap='getTeacheridDetail' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")' data-id="{{list.courseId}}">进行中            </view>
         </view>
         </block> 
-  <block wx:for="{{caselist}}" wx:for-item="list" wx:key="unique">
-        <view class='class-item' bindtap='VipcommonOpen' data-course='1'>
+  <!-- <block wx:for="{{caselist}}" wx:for-item="list" wx:key="unique">
+        <view class='class-item' >
           <view class='inner'>
             <view class='title-area'>
               <view class='class-icon'>
@@ -69,14 +69,14 @@
                 <text class='label'>课时消耗:</text>
                 <text class='content'>20/节</text>
               </view>
-              <view class='intro-font'>
+              <view class='intro-font' bindtap='VipcommonOpen' data-course='1'>
                 <text>查看详情</text>
               </view>
             </view>
           </view>
-          <view class='y1' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")'>签到</view>
+          <view class='y1' style='background-image:url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")' catchtap='getTeacheridDetail'  data-id="{{list.courseId}}">签到</view>
         </view>
-   </block>      
+   </block>       -->
       </view>
     </view>
   </view>

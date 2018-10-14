@@ -6,7 +6,7 @@
         <text>全部课程</text>
       </view>
       <view class='right-icon'>
-      <image src='../../images/arrow-right-light.png'></image>
+        <image src='../../images/arrow-right-light.png'></image>
       </view>
     </view>
     <view class='info-block'>
@@ -32,100 +32,6 @@
     <fs-date-picker hasClassArr='{{hasClassArr}}' id='FsDatePicker' bind:month-change='mongthChangeHandler' bind:date-item-change='dateItemChangeHandler'></fs-date-picker>
   </view>
   <view class='bottom-area'>
-    <view class='record-block'>
-  <view class='list-block'>
-    <view class='time-line-block one'>
-      <view class='time'>
-        <text>今天 18：00</text>
-      </view>
-      <view class='cell-line'>
-          <view slot='icon' class='icon'>
-            <image src='/images/blue-checked.png' class='icon-img'></image>
-          </view>
-          <view slot='main' class='main-content'>
-            <view class='class-name'>
-              <text>街舞幼儿01班</text>
-            </view>
-            <view class='teacher-name'>
-              <text class='label'>签到学员:</text>
-              <text>22</text>
-            </view>
-          </view>
-          <view slot='right' class='common' bindtap='commonOpen'>
-            <text>详情</text>
-          </view>
-      </view>
-    </view>
-     <view class='time-line-block two'>
-      <view class='time'>
-        <text>昨天 18：00</text>
-      </view>
-      <view class='cell-line'>
-          <view slot='icon' class='icon'>
-            <image src='/images/blue-checked.png' class='icon-img'></image>
-          </view>
-          <view slot='main' class='main-content'>
-            <view class='class-name'>
-              <text>街舞幼儿02班</text>
-            </view>
-            <view class='teacher-name'>
-              <text class='label'>签到学员:</text>
-              <text>22</text>
-            </view>
-          </view>
-          <view slot='right' class='common' bindtap='commonOpen'>
-            <text>详情</text>
-          </view>
-      </view>
-    </view>
-     <view class='time-line-block three'>
-      <view class='time'>
-        <text>前天 18：00</text>
-      </view>
-      <view class='cell-line'>
-          <view slot='icon' class='icon'>
-            <image src='/images/blue-checked.png' class='icon-img'></image>
-          </view>
-          <view slot='main' class='main-content'>
-            <view class='class-name'>
-              <text>街舞幼儿03班</text>
-            </view>
-            <view class='teacher-name'>
-              <text class='label'>签到学员:</text>
-              <text>22</text>
-            </view>
-          </view>
-          <view slot='right' class='common' bindtap='commonOpen'>
-            <text>详情</text>
-          </view>
-      </view>
-    </view>
-    <view class='time-line-block last one'>
-      <view class='time'>
-        <text>06-08 18：00</text>
-      </view>
-      <view class='cell-line'>
-          <view slot='icon' class='icon'>
-            <image src='/images/yellow-checked.png' class='icon-img'></image>
-          </view>
-          <view slot='main' class='main-content'>
-            <view class='class-name'>
-              <text>霹雳舞一对一</text>
-            </view>
-            <view class='teacher-name'>
-              <text class='label'>VIP学员:</text>
-              <text>小宝子</text>
-            </view>
-          </view>
-          <view slot='right' class='common' bindtap='VipcommonOpen'>
-            <text>详情</text>
-          </view>
-      </view>
-    </view>
-  </view>
-  <view class='no-more'>
-    <text>找不到更多记录了~</text>
-  </view>
-</view>
+   <class-record recordData='{{courseRecord}}'></class-record>
   </view>
 </view>

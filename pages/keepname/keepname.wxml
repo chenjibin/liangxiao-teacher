@@ -4,11 +4,11 @@
   <view class='top-area'>
     <view class='inner'>
       <view class='avator'>
-        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+        <image src='/images/blue-checked.png'></image>
       </view>
       <view class='content'>
         <view class='name no-padding-text'>
-          <text class='name-text'>霹雳舞高级训练班</text>
+          <text class='name-text'>宝宝②班</text>
         </view>
         <view class='desc no-padding-text'>
           <text>南山校区</text>
@@ -18,7 +18,7 @@
   </view>
   <view class='teacher-class'>
     <view class='title no-padding-text'>
-      <text>共 50 个在读学员</text>
+      <text>共 {{stuData.length}} 个在读学员</text>
     </view>
     <!--pages/test-component/index.wxml-->
     <view class='test-block'>

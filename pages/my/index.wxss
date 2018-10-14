@@ -119,7 +119,7 @@ border-radius:50%;
 }
 
 .mine-y {
-  width: 182rpx;
+  width: 50%;
   height: 14rpx;
   background-color: #ffea00;
   position: absolute;

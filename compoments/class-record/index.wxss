@@ -136,3 +136,73 @@
   border-radius: 4rpx;
 }
 
+.common-main {
+  position: relative;
+  box-sizing: border-box;
+  padding: 40rpx 66rpx;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+}
+
+.common-img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -45%);
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 5px 10px 0 rgba(122, 69, 229, 0.1);
+  border-radius: 50%;
+}
+
+.common-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.commont-star .icon {
+  margin-left: 6rpx;
+  width: 14px;
+  height: 14px;
+}
+
+.common-title {
+  margin-top: 50rpx;
+}
+
+.common-title text {
+  font-size: 21px;
+  font-weight: 700;
+  color: #333;
+}
+
+.commom-level-block {
+  margin-top: 40rpx;
+}
+
+.common-desc {
+  margin-top: 40rpx;
+}
+
+.common-desc text {
+  font-size: 15px;
+  color: #808080;
+}
+
+.common-btn {
+  margin-top: 40rpx;
+  padding: 27rpx 0;
+  width: 100%;
+  color: #fff;
+  background-color: #5C5BE3;
+  border-radius: 4rpx;
+  transition: all 0.2s ease-in-out;
+}
+.common-btn text {
+  font-size: 18px;
+}
+.common-btn.disabled {
+  background-color: #DADFE6;
+}

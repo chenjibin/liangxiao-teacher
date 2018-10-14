@@ -1,4 +1,0 @@
-<!--pages/test-component/index.wxml-->
-<view class='test-block'>
-  <choose-student stuData='{{stuData}}' bind:item-change='stuChange' bind:show-info='showInfo'></choose-student>
-</view>

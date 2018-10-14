@@ -60,10 +60,8 @@ Page({
     //   mask: true,
     // })
     const mock = [
-      { courseId: 1, courseName: "中级街舞训练班", courseType: "1", campusId: 2, campusName: "10", signTime: "每周二、四下午4点", status: 1 },
-      { courseId: 2, courseName: "初级街舞训练班", courseType: "1", campusId: 2, campusName: "20", signTime: "每周一、三下午5点", status: 0 },
-      { courseId: 3, courseName: "高级街舞训练班", courseType: "1", campusId: 2, campusName: "30", signTime: "每周二、四下午6点", status: 1 },
-      { courseId: 4, courseName: "特级街舞训练班", courseType: "1", campusId: 2, campusName: "40", signTime: "每周一、三下午3点", status: 0 },
+      { courseId: 1, courseName: "宝宝②班", courseType: "1", campusId: 2, campusName: "10", signTime: "周二、周四17.00-18.30", status: 1 },
+      { courseId: 2, courseName: "locking基础小班2", courseType: "1", campusId: 2, campusName: "20", signTime: "周六、周日14.30-16.00", status: 0 }
     ]
     this.setData({
       caselist: mock

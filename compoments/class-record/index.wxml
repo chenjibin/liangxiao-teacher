@@ -1,1 +1,52 @@
 <!--compoments/class-record/index.wxml-->
+<view class='record-block'>
+  <view class='list-block'>
+    <view class='time-line-block {{index % 3 === 0 ? "one" : ""}} {{index % 3 === 1 ? "two" : ""}} {{index % 3 === 2 ? "three" : ""}} {{index === recordData.length - 1 ? "last": ""}}' wx:for='{{recordData}}' wx:key='{{item.courseLogId}}'>
+      <view class='time'>
+        <text>{{item.signTime}}</text>
+      </view>
+      <view class='cell-line'>
+        <dance-cell>
+          <view slot='icon' class='icon'>
+            <image src='/images/blue-checked.png' class='icon-img'></image>
+          </view>
+          <view slot='main' class='main-content'>
+            <view class='class-name'>
+              <text>{{item.courseName}}</text>
+            </view>
+            <view class='teacher-name'>
+              <text class='label'>教师:</text>
+              <text>{{item.teacherName}}</text>
+            </view>
+          </view>
+          <view slot='right' class='common' bindtap='toKeepNameList' data-couresid='{{item.courseLogId}}'>
+            <text>详情</text>
+          </view>
+          <!-- <view slot='right' wx:if='{{item.score}}'>
+            <fs-rate level='{{item.score}}'></fs-rate>
+          </view> -->
+        </dance-cell>
+      </view>
+    </view>
+  </view>
+  <view class='no-more'>
+    <text>找不到更多记录了~</text>
+  </view>
+</view>
+<!-- <fs-modal visible="{{ commomViisible }}" bind:mask-close='closeMask'>
+  <view class='common-main' catchtap='cancelClickUp'>
+    <view class='common-img'>
+      <image src="{{commonList[commonLevel].img}}"></image>
+    </view>
+    <view class='common-title no-padding-text'>
+      <text>{{commonList[commonLevel].title}}</text>
+    </view>
+    <view class='commom-level-block'>
+      <fs-rate level='{{commonLevel}}' size='"large"' bind:star-click='starClickHandler'></fs-rate>
+    </view>
+    <view class='common-desc no-padding-text'>
+      <text>请您对该老师教的这节课做出评价</text>
+    </view>
+    <view class='common-btn no-padding-text {{commonLevel === 0 ? "disabled" : ""}}' bindtap='confirmCommon'><text>确定</text></view>
+  </view>
+</fs-modal> -->

@@ -26,9 +26,9 @@
         </view>
         <view class="mine-sj2">
           <view class="mine-w"></view>
-          <view class="mine-y"></view>
+          <view class="mine-y" style="width:80%"></view>
         </view>
-        <text class="mine-sj3">50.2%</text>
+        <text class="mine-sj3">80%</text>
       </view>
       <view class="mine-sj">
         <view class="mine-sj1">
@@ -39,9 +39,9 @@
         </view>
         <view class="mine-sj2">
           <view class="mine-w"></view>
-          <view class="mine-y"></view>
+          <view class="mine-y" style="width:10%"></view>
         </view>
-        <text class="mine-sj3">50.2%</text>
+        <text class="mine-sj3">10%</text>
       </view>
       <view class="mine-sj">
         <view class="mine-sj1">
@@ -51,9 +51,9 @@
         </view>
         <view class="mine-sj2">
           <view class="mine-w"></view>
-          <view class="mine-y"></view>
+          <view class="mine-y" style="width:5%"></view>
         </view>
-        <text class="mine-sj3">50.2%</text>
+        <text class="mine-sj3">5%</text>
       </view>
       <view class="mine-sj">
         <view class="mine-sj1">
@@ -62,9 +62,9 @@
         </view>
         <view class="mine-sj2">
           <view class="mine-w"></view>
-          <view class="mine-y"></view>
+          <view class="mine-y" style="width:3%"></view>
         </view>
-        <text class="mine-sj3">50.2%</text>
+        <text class="mine-sj3">3%</text>
       </view>
       <view class="mine-sj">
         <view class="mine-sj1">
@@ -72,9 +72,9 @@
         </view>
         <view class="mine-sj2">
           <view class="mine-w"></view>
-          <view class="mine-y"></view>
+          <view class="mine-y" style="width:2%"></view>
         </view>
-        <text class="mine-sj3">50.2%</text>
+        <text class="mine-sj3">2%</text>
       </view>
     </view>
     <text class="mine-he">—— 共 358 人次评分 ——</text>

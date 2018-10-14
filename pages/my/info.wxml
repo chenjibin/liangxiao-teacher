@@ -17,7 +17,7 @@
         <text>姓名</text>
       </view>
       <view class='content no-padding-text'>
-        <text>小宝子</text>
+        <text>袁行</text>
       </view>
     </view>
     <view class='fs-cell' style='padding: 34rpx 0;'>
@@ -25,7 +25,7 @@
         <text>手机号</text>
       </view>
       <view class='content'>
-        <input type="number"  disabled="true"  placeholder="13800138000" class='cell-input' placeholder-class='cell-input-hold'/>
+        <input type="number"  disabled="true"  placeholder="15366660711" class='cell-input' placeholder-class='cell-input-hold'/>
       </view>
     </view>
     <picker bindchange="bindPickerChange" value="{{sexIndex}}" range="{{sexArray}}">
@@ -84,7 +84,7 @@
         <text>职业</text>
       </view>
       <view class='content'>
-        <input type="text"  disabled="true"   placeholder="导师" class='cell-input' placeholder-class='cell-input-hold'/>
+        <input type="text"  disabled="true"   placeholder="老师" class='cell-input' placeholder-class='cell-input-hold'/>
       </view>
     </view>
     <view class='fs-cell' style='padding: 34rpx 0;'>
@@ -92,7 +92,7 @@
         <text>公司</text>
       </view>
       <view class='content'>
-        <input type="text"  disabled="true"   placeholder="维德尔舞蹈培训" class='cell-input' placeholder-class='cell-input-hold'/>
+        <input type="text"  disabled="true"   placeholder="卡乐少儿街舞" class='cell-input' placeholder-class='cell-input-hold'/>
       </view>
     </view>
   </view>

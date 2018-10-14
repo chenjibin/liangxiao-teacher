@@ -11,6 +11,10 @@ Component({
     value: {
       type: Array,
       value: []
+    },
+    canEditor: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -29,6 +33,7 @@ Component({
       this.triggerEvent('show-info', currentTarget.dataset.info);
     },
     checkChange({detail}) {
+      if (!this.data.canEditor) return
       this.triggerEvent('item-change', detail.value);
     },
     hideAllInfo() {

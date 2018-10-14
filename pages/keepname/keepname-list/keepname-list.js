@@ -3,80 +3,54 @@ Page({
     testImg: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
     showModalStatus: false,
     showView: true,
-      stuData: [
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 1,
-          checked: true
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 2,
-          checked: true
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 3,
-          checked: true
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 4,
-          checked: false
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 5,
-          checked: false
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 6,
-          checked: true
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 7,
-          checked: true
-        },
-        {
-          avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
-          nick: '小元宝',
-          phone: '15061998877',
-          sex: '男',
-          age: '10',
-          uid: 8,
-          checked: false
-        }
-      ],
+    canEditor: false,
+    stuData: [
+      {
+        avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
+        nick: '刘亦篪',
+        phone: '18036678906',
+        sex: '男',
+        age: '8',
+        uid: 1,
+        checked: false
+      },
+      {
+        avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
+        nick: '张涵博',
+        phone: '15061998877',
+        sex: '男',
+        age: '10',
+        uid: 2,
+        checked: false
+      },
+      {
+        avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
+        nick: '卞玉轩',
+        phone: '15252806688',
+        sex: '男',
+        age: '9',
+        uid: 3,
+        checked: false
+      },
+      {
+        avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
+        nick: '陈俊宇',
+        phone: '15861206411',
+        sex: '男',
+        age: '11',
+        uid: 4,
+        checked: false
+      },
+      {
+        avator: 'http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png',
+        nick: '常誉馨',
+        phone: '18352187222',
+        sex: '男',
+        age: '12',
+        uid: 5,
+        checked: false
+      }
+    ],
       stuValue: []
     },
     stuChange({ detail }) {
