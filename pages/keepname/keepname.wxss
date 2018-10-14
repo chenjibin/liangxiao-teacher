@@ -1,0 +1,250 @@
+/* pages/keepname/keepname.wxss */
+page{background-color: #f2f4f7}
+
+
+.top-area {
+  /* padding: 40rpx 32rpx; */
+  background-color: #fff;
+  color: #333;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  box-sizing: border-box;
+  z-index: 2
+}
+
+.top-area .inner {
+  display: flex;
+  align-items: center;
+  padding-left: 32rpx;
+}
+
+.top-area .inner .content {
+  margin-left: 26rpx;
+}
+
+.avator {
+  width: 40px;
+  height: 40px;
+}
+
+.avator image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name .name-text {
+  margin-bottom:12rpx;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.desc {
+  color: #808080
+}
+
+.teacher-class {
+  padding: 31rpx 28rpx;
+  margin-top: 70px;
+
+}
+
+.teacher-class .title {
+  margin-bottom: 31rpx;
+  text-align: center
+}
+
+.teacher-class .title text {
+  font-size: 12px;
+  color: #808080;
+}
+
+.keepcomm {
+  display: flex;
+  box-sizing: border-box;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: 686rpx;
+  margin-bottom: 180rpx;
+}
+
+.keepcomm-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 32rpx 0;
+  width: 156rpx;
+  height: 186rpx;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 20rpx;
+  margin-right: 21rpx
+}
+.keepcomm-active{margin-right: 0}
+
+.zhezhao {
+  position: absolute;
+  top: 0;
+  width: 158rpx;
+  height: 186rpx;
+  background-color: rgba(25, 25, 51, 0.7);
+  display: none
+}
+
+.zhezhao image {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 74rpx 58rpx;
+}
+
+.xinxi {
+  width: 240rpx;
+  height: 160rpx;
+  background-size: 240rpx 160rpx;
+  position: absolute;
+  bottom: -131rpx;
+  z-index: 999;
+  border-radius: 5px;
+    box-shadow:0px 6px 10px RGBA(65, 63, 202, 0.05);
+    display: none;
+}
+
+.xinxi text {
+  display: block;
+  font-size: 12px;
+  color: rgba(128, 128, 128, 1);
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.xinxi .xinxiname {
+  font-size: 15px;
+  color: #333;
+}
+
+.xinxicomm {
+  padding: 22rpx 44rpx;
+}
+
+.keepure {
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 16rpx;
+  color: #333;
+  display: block;
+  text-align: center;
+}
+
+.zhezhao.hide.show{ 
+ display: block;
+
+}
+.xinxi.hide.show{ 
+ display: block;
+
+}
+/* 签到 */
+
+.qiandao-comm {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 20rpx 0;
+  background-color: #fff;
+  box-shadow: 10rpx 0 10rpx #f1f3f6;
+  z-index: 2
+}
+
+.qiandao-btn {
+  border-radius: 4px;
+  background-color: #5b5be3;
+  color: #fff;
+  border: none;
+  width: 93%;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.dm-people {
+  font-size: 12px;
+  color: #808080;
+  padding-bottom: 18rpx;
+  display: block;
+}
+
+/* 自定义弹窗 */
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #191933;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.courseone-pic {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -60rpx;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -70rpx;
+}
+
+.courseone-drawer {
+  text-align: center;
+  margin: 80rpx auto 0;
+  font-size: 42rpx;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.drawer_box {
+  top: 50%;
+  margin-top: -173rpx;
+  margin-left: 75rpx;
+  width: 600rpx;
+  height: 346rpx;
+  z-index: 9999;
+  background-color: #fff;
+  border-radius: 20rpx;
+  position: fixed;
+}
+
+.btn_ok {
+  padding: 20rpx 0;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  color: #fff;
+  background-color: #5c5be3;
+  width: 466rpx;
+  margin: 60rpx auto;
+  border-radius: 5rpx;
+}
+
+
+
+
+

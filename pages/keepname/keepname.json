@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "点名",
+  "onReachBottomDistance": 50 ,
+  "usingComponents": {
+    "choose-student": "../keepname/choose-student/index"
+  }
+}

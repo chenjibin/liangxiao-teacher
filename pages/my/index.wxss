@@ -1,0 +1,144 @@
+/* pages/my/index.wxss */
+.mine {
+  background-image: url('http://tm.xyyzi.com:9099/oa/test/user_img.jpg')
+}
+.my-page{
+    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.minepic {
+  height:120rpx;
+  flex:0 0 120rpx;
+  width:120rpx;
+  box-shadow: 10rpx -4rpx 20rpx rgba(25, 25, 51, 0.1);
+  border-radius:50%;
+}
+.minepic image{
+  height:120rpx;
+width:100%;
+border-radius:50%;
+
+}
+.mine-name text {
+  display: block;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fefefe;
+  font-weight: bold;
+  padding: 10rpx 0;
+}
+
+.mine {
+  width: 660rpx;
+  height: 868rpx;
+  position: relative;
+  margin-top: 130rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 25rpx;
+  background-size: 660rpx 868rpx;
+}
+
+.mine-name {
+  width: 140rpx;
+  margin-top: -70rpx;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mine-star {
+  color: #ffea00;
+  width: 140rpx;
+  display: flex;
+  flex-direction:column;
+  box-sizing: content-box; 
+  align-items: center;
+}
+.mine-star image{
+  height:120rpx;
+  flex:0 0 120rpx;
+  width:120rpx;
+}
+
+.mine-star text {
+  display: block;
+  font-size:30px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 57rpx;
+}
+
+.sjpic {
+  width: 20rpx;
+  height: 20rpx;
+  margin: 0 2rpx;
+}
+
+.mine-sj {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 556rpx;
+  margin-bottom: 10rpx;
+}
+
+.mine-sj1 {
+  width: 130rpx;
+  text-align: right;
+  line-height: 10px;
+}
+
+.mine-sj2 {
+  position: relative;
+  flex: 1;
+  height: 14rpx;
+  margin:0 10rpx;
+  overflow: hidden;
+  border-radius: 25rpx;
+}
+
+.mine-sj3 {
+  font-size: 9px;
+  color: rgba(254, 254, 254, 0.5);
+}
+
+.mine-w {
+  width: 364rpx;
+  height: 14rpx;
+  background-color: rgba(242, 244, 247, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.mine-y {
+  width: 182rpx;
+  height: 14rpx;
+  background-color: #ffea00;
+  position: absolute;
+  top: 0;
+  border-radius: 25rpx;
+}
+
+.str-comm {
+  padding: 42rpx 0 30rpx 0;
+  border-top: 1px solid rgba(242, 244, 247, 0.5);
+}
+
+.mine-he {
+  font-size: 24rpx;
+  color: rgba(242, 244, 247, 0.5);
+}
+
+.qiehuan {
+  color: rgba(179, 179, 179, 1);
+  font-size: 24rpx;
+  padding: 20rpx;
+}

@@ -1,0 +1,94 @@
+/* pages/fees/list.wxss */
+page {
+  background-color: #f2f4f7;
+}
+.top-area {
+  margin-bottom: 20rpx;
+  padding: 60rpx 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.total-fees-title {
+  margin-bottom: 21rpx;
+}
+
+.total-fees-title text {
+  color: #333;
+}
+
+.total-fees text{
+  font-size: 24px;
+  color: #333;
+}
+
+.fees-list-block {
+  padding: 0 32rpx;
+  background-color: #fff;
+}
+
+.each-fee-record {
+  position: relative;
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+}
+.each-fee-record.no-border::after {
+  display: none;
+}
+.each-fee-record::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #E6E6E6;
+  border-bottom-width: 1px;
+  right: 0;
+}
+.each-fee-record .text-icon {
+  margin-right: 23rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4CA6FF;
+  text-align: center;
+}
+.each-fee-record .text-icon.teach {
+background-color: #FF9966;
+}
+.each-fee-record .text-icon.new {
+background-color: #5C5BE3;
+}
+.each-fee-record .text-icon text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.each-fee-record .fees-desc {
+  flex: 1;
+}
+.each-fee-record .fees-desc .fees-type text{
+  color: #333;
+  font-size: 15px;
+}
+
+.each-fee-record .fees-desc .fees-time {
+  margin-top: 13rpx;
+  color: #808080;
+}
+
+.each-fee-record .fees-number text {
+  font-size: 18px;
+  color: #333;
+}

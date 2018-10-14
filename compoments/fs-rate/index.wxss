@@ -1,0 +1,11 @@
+/* compoments/fs-rate/index.wxss */
+.commont-star .icon {
+  margin-left: 6rpx;
+  width: 14px;
+  height: 14px;
+}
+.commont-star .icon.large {
+  margin: 0 10rpx;
+  width: 28px;
+  height: 28px;
+}

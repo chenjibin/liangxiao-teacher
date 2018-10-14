@@ -1,0 +1,71 @@
+<!--pages/teacher-list/index.wxml-->
+<view class='teacher-list'>
+  <view class='each-cell' bindtap='toTeacherDetail' data-teacher='1'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'><text>双子之星</text></view>
+        <view class='desc no-padding-text'>
+        <text>15015487487</text>
+        <text style='margin-left: 24rpx;'>在教课程:5</text>
+        </view>
+      </view>
+      <view class='icon-arrow'>
+        <image src='../../images/arrow-right-dark.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='each-cell' >
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'><text>双子之星</text></view>
+        <view class='desc no-padding-text'>
+        <text>15015487487</text>
+        <text style='margin-left: 24rpx;'>在教课程:5</text>
+        </view>
+      </view>
+      <view class='icon-arrow'>
+        <image src='../../images/arrow-right-dark.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='each-cell'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'><text>双子之星</text></view>
+        <view class='desc no-padding-text'>
+        <text>15015487487</text>
+        <text style='margin-left: 24rpx;'>在教课程:5</text>
+        </view>
+      </view>
+      <view class='icon-arrow'>
+        <image src='../../images/arrow-right-dark.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='each-cell no-border'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'><text>双子之星</text></view>
+        <view class='desc no-padding-text'>
+        <text>15015487487</text>
+        <text style='margin-left: 24rpx;'>在教课程:5</text>
+        </view>
+      </view>
+      <view class='icon-arrow'>
+        <image src='../../images/arrow-right-dark.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

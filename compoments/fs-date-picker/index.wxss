@@ -1,0 +1,129 @@
+/* compoments/fs-date-picker.wxss */
+
+.no-padding-text {
+  font-size: 0;
+}
+
+.no-padding-text text {
+  display: inline-block;
+  line-height: 1;
+  font-size: 12px;
+}
+
+.date-block {
+  display: flex;
+  padding-bottom:16rpx;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 5px 6px 0 rgba(65,63,202,0.1);
+}
+
+.date-block .top-tool {
+  position: relative;
+  padding: 37rpx 0 39rpx 0;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.date-block .top-tool .arrow-img {
+  position: relative;
+}
+.date-block .top-tool .arrow-img::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.date-block .top-tool .arrow-img {
+  width: 24rpx;
+  height: 24rpx;
+  font-size: 0;
+}
+.date-block .top-tool .arrow-img image {
+  width: 100%;
+  height: 100%;
+}
+.date-block .top-tool::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0px solid #E6E6E6;
+  border-bottom-width: 1px;
+  right: 0;
+}
+.date-block .top-tool .no-padding-text text {
+  font-size: 14px;
+}
+.date-block .top-tool .no-padding-text.date-number {
+  margin: 0 43rpx;
+  color: #5b5be3;
+} 
+.date-head {
+  font-size: 12px;
+  color: #808080;
+}
+
+.date-block .date-item {
+  display: flex;
+  justify-content: center;
+  margin: 12rpx 0;
+  font-size: 14px;
+  color: #808080;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.date-block .date-item .inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  transition: all 0.2s;
+}
+.date-block .date-item .inner.today::after {
+  content: '';
+  position: absolute;
+  bottom: -16rpx;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background-color: #5b5be3;
+}
+.date-block .date-item.date-active .inner {
+  background-color: #5b5be3;
+  color: #fff;
+  border: 2rpx solid #5b5be3;
+  box-shadow: 0px 2px 4px 0 rgba(65, 63, 202, 0.2);
+}
+.date-block .date-item.date-active-circle .inner {
+  border: 2rpx solid #5b5be3;
+}
+
+.date-block .date-item.date-active-choose .inner {
+  color: #fff;
+  background-color: #5b5be3;
+  border: 2rpx solid #5b5be3;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "dance-cell": "../../compoments/dance-cell/index",
+    "class-record": "../../compoments/class-record/index"
+  }
+}

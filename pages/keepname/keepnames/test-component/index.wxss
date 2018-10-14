@@ -1,0 +1,7 @@
+/* pages/test-component/index.wxss */
+page {
+  background-color: #eee;
+}
+.test-block {
+  padding: 32rpx;
+}

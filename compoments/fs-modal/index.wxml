@@ -1,0 +1,4 @@
+<view class="fs-modal-mask fs-class-mask {{ visible ? 'fs-modal-mask-show' : '' }}" bindtap='closeHandler'></view>
+<view class="fs-class fs-modal {{ visible ? 'fs-modal-show' : '' }}" catchtap='closeHandler'>
+  <slot></slot>
+</view>

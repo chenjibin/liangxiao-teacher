@@ -1,0 +1,29 @@
+<!--pages/keepname/keepname.wxml-->
+<!--pages/teacher-detail/index.wxml-->
+<view class='teacher-detail'>
+  <view class='top-area'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'>
+          <text class='name-text'>霹雳舞高级训练班</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>南山校区</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='teacher-class'>
+    <view class='title no-padding-text'>
+      <text>共 0 个学员签到</text>
+      <text style='display:block;padding-top:5px;'>签到时间：2015-07-28 16:00</text>
+    </view>
+    <view class='test-block'>
+      <choose-student stuData='{{stuData}}' bind:item-change='stuChange' bind:show-info='showInfo'></choose-student>
+    </view>
+  </view>
+
+</view>

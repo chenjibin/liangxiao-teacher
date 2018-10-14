@@ -1,0 +1,78 @@
+<!--pages/fees/detail.wxml-->
+<view class='fees-detail-page'>
+  <view class='top-area'>
+    <view class='org-icon'>
+      <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+    </view>
+    <view class='org-name no-padding-text'>
+      <text>威德尔舞蹈培训-南山校区</text>
+    </view>
+    <view class='fees-number no-padding-text'>
+      <text>2000.00</text>
+    </view>
+  </view>
+  <view class='fs-cell-group'>
+    <view class='fs-cell'>
+      <view class='label no-padding-text'>
+        <text>支付方式</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>现金支付</text>
+      </view>
+    </view>
+    <view class='fs-cell no-border'>
+      <view class='label no-padding-text'>
+        <text>缴费类型</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>新生注册</text>
+      </view>
+    </view>
+  </view>
+  <view class='fs-cell-group'>
+    <view class='fs-cell'>
+      <view class='label no-padding-text'>
+        <text>缴费时间</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>2018-08-01 12:11</text>
+      </view>
+    </view>
+    <view class='fs-cell no-border'>
+      <view class='label no-padding-text'>
+        <text>订单号</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>20180801001</text>
+      </view>
+    </view>
+  </view>
+  <view class='fs-cell-group'>
+    <view class='fs-cell'>
+      <view class='label no-padding-text'>
+        <text>经办人</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>Nicky</text>
+      </view>
+    </view>
+    <view class='fs-cell no-border'>
+      <view class='label no-padding-text'>
+        <text>联系方式</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>13852545242</text>
+      </view>
+    </view>
+  </view>
+  <view class='fs-cell-group'>
+    <view class='fs-cell no-border'>
+      <view class='label no-padding-text'>
+        <text>积分奖励</text>
+      </view>
+      <view class='content no-padding-text coin'>
+        <text>2000</text>
+      </view>
+    </view>
+  </view>
+</view>

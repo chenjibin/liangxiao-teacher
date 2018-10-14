@@ -1,0 +1,48 @@
+<!--pages/my-course-record/index.wxml-->
+
+<view>
+<view class='top-area'>
+    <view class='top-line'>
+      <view class='img-wrap'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content-wrap'>
+        <view class='title no-padding-text'>
+          <text>街舞幼儿02班</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>双子之星</text>
+          <text style='margin-left: 16rpx;'>15018745877</text>
+        </view>
+      </view>
+    </view>
+  </view>
+<view class='bottom-area'>
+    <view class='head no-padding-text'>
+      <text>签到时间</text>
+      <text>课时消耗</text>
+    </view>
+    <view class='list-block'>
+      <view class='each-line no-padding-text'>
+        <text>今天18:00</text>
+        <text>15</text>
+      </view>
+      <view class='each-line no-padding-text'>
+        <text>昨天天18:00</text>
+        <text>12</text>
+      </view>
+      <view class='each-line no-padding-text'>
+        <text>今天18:00</text>
+        <text>20</text>
+      </view>
+      <view class='each-line no-padding-text'>
+        <text>前天18:00</text>
+        <text>18</text>
+      </view>
+      <view class='each-line no-padding-text last'>
+        <text>08-06 18:00</text>
+        <text>15</text>
+      </view>
+    </view>
+  </view>
+</view>

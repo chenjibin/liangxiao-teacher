@@ -1,0 +1,77 @@
+<!--pages/fees/list.wxml-->
+<view class='fees-list-page'>
+  <view class='top-area'>
+    <view class='no-padding-text  total-fees-title'>
+      <text>缴费总额</text>
+    </view>
+    <view class='no-padding-text  total-fees'>
+      <text>12000.00</text>
+    </view>
+  </view>
+  <view class='fees-list-block'>
+    <view class='each-fee-record' bindtap='toFeesDetail' data-id='1'>
+      <view class='text-icon no-padding-text'>
+        <text>充</text>
+      </view>
+      <view class='fees-desc'>
+        <view class='no-padding-text fees-type'>
+          <text>充值缴费</text>
+        </view>
+        <view class='no-padding-text fees-time'>
+          <text>今天 18:00</text>
+        </view>
+      </view>
+      <view class='fees-number no-padding-text'>
+        <text>2000.00</text>
+      </view>
+    </view>
+    <view class='each-fee-record'>
+      <view class='text-icon no-padding-text teach'>
+        <text>教</text>
+      </view>
+      <view class='fees-desc'>
+        <view class='no-padding-text fees-type'>
+          <text>一对一教学</text>
+        </view>
+        <view class='no-padding-text fees-time'>
+          <text>今天 18:00</text>
+        </view>
+      </view>
+      <view class='fees-number no-padding-text'>
+        <text>2000.00</text>
+      </view>
+    </view>
+    <view class='each-fee-record'>
+      <view class='text-icon no-padding-text new'>
+        <text>新</text>
+      </view>
+      <view class='fees-desc'>
+        <view class='no-padding-text fees-type'>
+          <text>新生注册</text>
+        </view>
+        <view class='no-padding-text fees-time'>
+          <text>今天 18:00</text>
+        </view>
+      </view>
+      <view class='fees-number no-padding-text'>
+        <text>2000.00</text>
+      </view>
+    </view>
+    <view class='each-fee-record no-border'>
+      <view class='text-icon no-padding-text'>
+        <text>充</text>
+      </view>
+      <view class='fees-desc'>
+        <view class='no-padding-text fees-type'>
+          <text>充值缴费</text>
+        </view>
+        <view class='no-padding-text fees-time'>
+          <text>今天 18:00</text>
+        </view>
+      </view>
+      <view class='fees-number no-padding-text'>
+        <text>2000.00</text>
+      </view>
+    </view>
+  </view>
+</view>

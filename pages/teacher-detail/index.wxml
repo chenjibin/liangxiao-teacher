@@ -1,0 +1,123 @@
+<!--pages/teacher-detail/index.wxml-->
+<view class='teacher-detail'>
+  <view class='top-area'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'>
+          <text class='name-text'>双子之星</text>
+          <text class='sex-text' style='margin-left: 20rpx;'>男</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>15015487487</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='teacher-class'>
+    <view class='title no-padding-text'>
+      <text>在教课程</text>
+    </view>
+    <view class='class-list'>
+      <view class='class-item'>
+        <view class='inner'>
+          <view class='title-area'>
+            <view class='class-icon'>
+              <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+            </view>
+            <view class='class-title no-padding-text'>
+              <text>街舞幼儿01班</text>
+            </view>
+            <view class='no-padding-text my-tag'>
+              <text>我的课程</text>
+            </view>
+          </view>
+          <view class='content-area'>
+            <view class='no-padding-text'>
+              <text class='label'>上课时间:</text>
+              <text class='content'>每周二、四下午4点</text>
+            </view>
+            <view class='no-padding-text'>
+              <text class='label'>课时消耗:</text>
+              <text class='content'>20/节</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='class-item'>
+        <view class='inner'>
+          <view class='title-area'>
+            <view class='class-icon'>
+              <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+            </view>
+            <view class='class-title no-padding-text'>
+              <text>街舞幼儿01班</text>
+            </view>
+            <view class='no-padding-text my-tag'>
+              <text>我的课程</text>
+            </view>
+          </view>
+          <view class='content-area'>
+            <view class='no-padding-text'>
+              <text class='label'>上课时间:</text>
+              <text class='content'>每周二、四下午4点</text>
+            </view>
+            <view class='no-padding-text'>
+              <text class='label'>课时消耗:</text>
+              <text class='content'>20/节</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='class-item'>
+        <view class='inner'>
+          <view class='title-area'>
+            <view class='class-icon'>
+              <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+            </view>
+            <view class='class-title no-padding-text'>
+              <text>街舞幼儿01班</text>
+            </view>
+            <view class='no-padding-text my-tag'>
+              <text>我的课程</text>
+            </view>
+          </view>
+          <view class='content-area'>
+            <view class='no-padding-text'>
+              <text class='label'>上课时间:</text>
+              <text class='content'>每周二、四下午4点</text>
+            </view>
+            <view class='no-padding-text'>
+              <text class='label'>课时消耗:</text>
+              <text class='content'>20/节</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='class-item' style='background-image: url("http://tm.xyyzi.com:9099/oa/test/user_bg.jpg");'>
+        <view class='inner'>
+          <view class='title-area'>
+            <view class='class-icon'>
+              <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+            </view>
+            <view class='class-title no-padding-text'>
+              <text>街舞幼儿01班</text>
+            </view>
+          </view>
+          <view class='content-area'>
+            <view class='no-padding-text'>
+              <text class='label'>上课时间:</text>
+              <text class='content'>每周二、四下午4点</text>
+            </view>
+            <view class='no-padding-text'>
+              <text class='label'>课时消耗:</text>
+              <text class='content'>20/节</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

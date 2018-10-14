@@ -1,0 +1,22 @@
+<!--compoments/fs-date-picker.wxml-->
+<view class='date-block' style='width: {{ sysW * 7 }}px'>
+  <view class='top-tool'>
+    <view class='arrow-img' bindtap='beforeMonth'>
+      <image src='../../images/date-arrow-left.png'></image>
+    </view>
+    <view class='no-padding-text date-number' style=''>
+      <text>{{nowMonth}}</text>
+    </view>
+    <view class='arrow-img' bindtap='forwordMonth'>
+      <image src='../../images/date-arrow-right.png'></image>
+    </view>
+  </view>
+  <block wx:for='{{ weekArr }}' wx:key='index'>
+    <view style='width: {{ sysW }}px; height: {{ sysH}}px; line-height: {{ sysH }}px;' class='date-head'>{{ item }}</view>
+  </block>
+  <block wx:for='{{ arr }}' wx:key='index'>
+    <view style='{{ index == 0 ? "margin-left:" + sysW * firstDay + "px;" : "" }}width: {{ sysW }}px; height: {{ sysH }}px; line-height: {{ sysH }}px;' class='date-item {{ item.hasClass ? "date-active-circle" : ""}} {{item.date === chooseDate ? "date-active-choose":""}}'>
+      <view class='inner {{toDay === item.date ? "today":""}}' style='width: {{ sysH }}px;height: {{ sysH }}px' data-day='{{item.date}}' catchtap='dateChoose'>{{item.num }}</view>
+    </view>
+  </block>
+</view>

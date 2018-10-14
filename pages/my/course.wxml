@@ -1,0 +1,143 @@
+<!--pages/my/course.wxml-->
+<view class='my-course'>
+  <view class='class-list'>
+    <view class='class-item' bindtap='toCourseDetail' data-course='1'>
+      <view class='inner'>
+        <view class='title-area'>
+          <view class='class-icon'>
+            <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          </view>
+          <view class='class-title no-padding-text'>
+            <text>街舞幼儿01班</text>
+          </view>
+        </view>
+        <view class='content-area'>
+        <view class='no-padding-text'>
+            <text class='label'>任教导师:</text>
+            <text class='content'>双子之星</text>
+            <text class='phone'>15068774568</text>
+          </view>
+          <view class='no-padding-text'>
+            <text class='label'>上课时间:</text>
+            <text class='content'>每周二、四下午4点</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='class-item'>
+      <view class='inner'>
+        <view class='title-area'>
+          <view class='class-icon'>
+            <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          </view>
+          <view class='class-title no-padding-text'>
+            <text>街舞幼儿01班</text>
+          </view>
+        </view>
+        <view class='content-area'>
+        <view class='no-padding-text'>
+            <text class='label'>任教导师:</text>
+            <text class='content'>双子之星</text>
+            <text class='phone'>15068774568</text>
+          </view>
+          <view class='no-padding-text'>
+            <text class='label'>上课时间:</text>
+            <text class='content'>每周二、四下午4点</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='class-item'>
+      <view class='inner'>
+        <view class='title-area'>
+          <view class='class-icon'>
+            <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          </view>
+          <view class='class-title no-padding-text'>
+            <text>街舞幼儿01班</text>
+          </view>
+        </view>
+        <view class='content-area'>
+        <view class='no-padding-text'>
+            <text class='label'>任教导师:</text>
+            <text class='content'>双子之星</text>
+            <text class='phone'>15068774568</text>
+          </view>
+          <view class='no-padding-text'>
+            <text class='label'>上课时间:</text>
+            <text class='content'>每周二、四下午4点</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='class-item'>
+      <view class='inner'>
+        <view class='title-area'>
+          <view class='class-icon'>
+            <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          </view>
+          <view class='class-title no-padding-text'>
+            <text>街舞幼儿01班</text>
+          </view>
+        </view>
+        <view class='content-area'>
+        <view class='no-padding-text'>
+            <text class='label'>任教导师:</text>
+            <text class='content'>双子之星</text>
+            <text class='phone'>15068774568</text>
+          </view>
+          <view class='no-padding-text'>
+            <text class='label'>上课时间:</text>
+            <text class='content'>每周二、四下午4点</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='class-item'>
+      <view class='inner'>
+        <view class='title-area'>
+          <view class='class-icon'>
+            <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          </view>
+          <view class='class-title no-padding-text'>
+            <text>街舞幼儿01班</text>
+          </view>
+        </view>
+        <view class='content-area'>
+        <view class='no-padding-text'>
+            <text class='label'>任教导师:</text>
+            <text class='content'>双子之星</text>
+            <text class='phone'>15068774568</text>
+          </view>
+          <view class='no-padding-text'>
+            <text class='label'>上课时间:</text>
+            <text class='content'>每周二、四下午4点</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='class-item'>
+      <view class='inner'>
+        <view class='title-area'>
+          <view class='class-icon'>
+            <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+          </view>
+          <view class='class-title no-padding-text'>
+            <text>街舞幼儿01班</text>
+          </view>
+        </view>
+        <view class='content-area'>
+        <view class='no-padding-text'>
+            <text class='label'>任教导师:</text>
+            <text class='content'>双子之星</text>
+            <text class='phone'>15068774568</text>
+          </view>
+          <view class='no-padding-text'>
+            <text class='label'>上课时间:</text>
+            <text class='content'>每周二、四下午4点</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--compoments/dance-cell/index.wxml-->
+<view class='dance-cell'>
+  <view class='icon-block'>
+    <slot name="icon"></slot>
+  </view>
+  <view class='main-block'>
+    <slot name="main"></slot>
+  </view>
+  <slot name="right"></slot>
+</view>

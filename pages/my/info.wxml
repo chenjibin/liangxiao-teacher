@@ -1,0 +1,99 @@
+<!--pages/my/info.wxml-->
+<view class='my-info-page'>
+  <view class='top-area' bindtap='avatorChange'>
+    <view class='avator-title no-padding-text'>
+      <text>头像</text>
+    </view>
+    <view class='avator'>
+      <image src='{{testImg}}'></image>
+    </view>
+    <view class='right-icon-wrap'>
+      <image src='../../images/arrow-right-dark.png'></image>
+    </view>
+  </view>
+  <view class='fs-cell-group'>
+    <view class='fs-cell'>
+      <view class='label no-padding-text'>
+        <text>姓名</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>小宝子</text>
+      </view>
+    </view>
+    <view class='fs-cell' style='padding: 34rpx 0;'>
+      <view class='label no-padding-text' style='display: flex;align-items: center;'>
+        <text>手机号</text>
+      </view>
+      <view class='content'>
+        <input type="number"  disabled="true"  placeholder="13800138000" class='cell-input' placeholder-class='cell-input-hold'/>
+      </view>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{sexIndex}}" range="{{sexArray}}">
+      <view class='fs-cell'>
+        <view class='label no-padding-text'>
+          <text>性别</text>
+        </view>
+        <view class='content no-padding-text'>
+          <text>{{sexArray[sexIndex]}}</text>
+        </view>
+        <view class='right-icon-wrap'>
+          <image src='../../images/arrow-right-dark.png'></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode="date" value="{{date}}" start="1950-01-01" end="{{nowDate}}" bindchange="bindDateChange">
+      <view class='fs-cell no-border'>
+        <view class='label no-padding-text'>
+          <text>生日</text>
+        </view>
+        <view class='content no-padding-text'>
+          <text>{{date}}</text>
+        </view>
+        <view class='right-icon-wrap'>
+          <image src='../../images/arrow-right-dark.png'></image>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='fs-cell-group'>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <view class='fs-cell'>
+        <view class='label no-padding-text'>
+          <text>地区</text>
+        </view>
+        <view class='content no-padding-text'>
+          <text class='region-text'>{{region[0]}}</text>
+          <text class='region-text'>{{region[1]}}</text>
+          <text class='region-text'>{{region[2]}}</text>
+        </view>
+        <view class='right-icon-wrap'>
+          <image src='../../images/arrow-right-dark.png'></image>
+        </view>
+      </view>
+    </picker>
+    <view class='fs-cell'>
+      <view class='label no-padding-text'>
+        <text>详细地址</text>
+      </view>
+      <view class='content no-padding-text'>
+        <text>天涯海角13号</text>
+      </view>
+    </view>
+    <view class='fs-cell' style='padding: 34rpx 0;'>
+      <view class='label no-padding-text' style='display: flex;align-items: center;'>
+        <text>职业</text>
+      </view>
+      <view class='content'>
+        <input type="text"  disabled="true"   placeholder="导师" class='cell-input' placeholder-class='cell-input-hold'/>
+      </view>
+    </view>
+    <view class='fs-cell' style='padding: 34rpx 0;'>
+      <view class='label no-padding-text' style='display: flex;align-items: center;'>
+        <text>公司</text>
+      </view>
+      <view class='content'>
+        <input type="text"  disabled="true"   placeholder="维德尔舞蹈培训" class='cell-input' placeholder-class='cell-input-hold'/>
+      </view>
+    </view>
+  </view>
+</view>

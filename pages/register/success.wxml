@@ -1,0 +1,14 @@
+<!--pages/register/success.wxml-->
+<view class='login-error'>
+  <view class='content'>
+    <view class='error-icon'>
+      <image src='../../images/success-icon.png' class='error-img'></image>
+    </view>
+    <view class='title'>
+    <text>申请成功</text>
+    </view>
+    <view class='desc'>
+    <text>工作人员将于24小时内与您取得联系，请保持手机畅通！</text>
+    </view>
+  </view>
+</view>

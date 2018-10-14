@@ -1,0 +1,297 @@
+<!--pages/my-course-detail/inde.wxml-->
+<view class='my-course-detail'>
+  <view class='top-area'>
+    <view class='top-line'>
+      <view class='img-wrap'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content-wrap'>
+        <view class='title no-padding-text'>
+          <text>街舞幼儿02班</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>南山校区</text>
+        </view>
+      </view>
+    </view>
+    <view class='top-info'>
+      <view class='no-padding-text info-item'>
+        <text class='label'>上课时间:</text>
+        <text class='content'>每周二、四下午4点</text>
+      </view>
+      <view class='no-padding-text info-item' style='margin-bottom: 0;'>
+        <text class='label'>课时消耗:</text>
+        <text class='content'>2/节</text>
+      </view>
+    </view>
+  </view>
+  <view class="swiper-tab tab-left">
+    <view class="tab-item {{currentTab==0 ? 'active' : ''}}" data-current="0" bindtap="swichNav">
+      上课记录(60)
+    </view>
+    <view class="tab-item {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="swichNav">学员(30)</view>
+  </view>
+  <view class='tab-heng'></view>
+  <swiper current="{{currentTab}}" class="swiper" duration="300" style="height:{{winHeight - 30}}px" bindchange="bindChange">
+    <swiper-item>
+      <view class="right-item">
+        <view class='bottom-area'>
+          <view class='head no-padding-text'>
+            <text>签到时间</text>
+            <text>签到学员</text>
+          </view>
+          <view class='list-block'>
+            <view class='each-line no-padding-text' bindtap="keepnamelist">
+              <text>今天18:00</text>
+              <view class='each-line-arrow'>
+                <text>12</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>昨天18:00</text>
+              <view class='each-line-arrow'>
+                <text>13</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>前天18:00</text>
+              <view class='each-line-arrow'>
+                <text>20</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>08-06 18:00</text>
+              <view class='each-line-arrow'>
+                <text>20</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>07-22 18:00</text>
+              <view class='each-line-arrow'>
+                <text>17</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>2017-12-12 18:00</text>
+              <view class='each-line-arrow'>
+                <text>20</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>2015-12-12 18:00</text>
+              <view class='each-line-arrow'>
+                <text>13</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>2015-12-12 18:00</text>
+              <view class='each-line-arrow'>
+                <text>10</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+        <view class='teacher-list'>
+          <view class='each-cell' bindtap='mycourseRecord' data-teacher='1'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>双子之星</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>男</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='each-cell'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>小宝子</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>男</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='each-cell'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>二宝子</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>男</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='each-cell'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>熊大</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>男</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='each-cell'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>可儿</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>女</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='each-cell'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>小二子</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>男</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='each-cell'>
+            <view class='inner'>
+              <view class='avator'>
+                <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+              </view>
+              <view class='content'>
+                <view class='name no-padding-text'>
+                  <text>小三子</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>男</text>
+                  <text style='margin-left: 24rpx;font-size:12px;color:#808080;'>10岁</text>
+                </view>
+                <view class='desc no-padding-text'>
+                  <text>15015487487</text>
+
+                </view>
+              </view>
+              <view class='each-line-arrow'>
+                <text>上课记录</text>
+                <view class='icon-arrow'>
+                  <image src='../../images/arrow-right-dark.png'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="keepdate-name-y1" bindtap='keepnameId' data-statu="open" style='background-image: url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")'>点名</view>
+</view>

@@ -1,0 +1,31 @@
+<!--compoments/choose-student/index.wxml-->
+<view class='choose-student'>
+  <checkbox-group class="choose-student-radio" bindchange="checkChange">
+    <view class="radio-item {{item.checked  ? 'checked': ''}}" wx:for="{{stuData}}" wx:key="{{item.uid}}" bindlongpress='showInfo' data-info='{{item.uid}}'>
+      <view class='inner'>
+        <view class='in'>
+          <view class='avator'>
+            <image src='{{item.avator}}'></image>
+          </view>
+          <view class='nick-name no-padding-text'>
+            <text>{{item.nick}}</text>
+          </view>
+        </view>
+        <checkbox value="{{item.uid}}" checked='{{item.checked}}' class='check-cover' />
+        <view class='info border-1px {{item.infoShow? "show":""}}'>
+          <view class='span no-padding-text'><text class='em'></text></view>
+          <view class='name no-padding-text'>
+            <text>{{item.nick}}</text>
+          </view>
+          <view class='some no-padding-text'>
+            <text class='sex'>{{item.sex}}</text>
+            <text class='age'>{{item.age}}岁</text>
+          </view>
+          <view class='phone no-padding-text'>
+            <text>{{item.phone}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </checkbox-group>
+</view>

@@ -1,0 +1,217 @@
+/* pages/vip-course-detail/index.wxss */
+/* pages/my-course-detail/inde.wxss */
+.top-area {
+  padding: 30rpx 33rpx;
+  background-color: #191933;
+  color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-area.top-white{
+  background-color: #fff;
+  color: #808080
+}
+.top-line {
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.top-line .img-wrap {
+  flex: 0 0 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.top-line .img-wrap image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.content-wrap {
+  flex: 1;
+  margin-left: 15rpx;
+}
+.content-wrap .title {
+  margin-bottom: 12rpx;
+}
+.content-wrap .title text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+.top-info .info-item {
+  margin-bottom: 18rpx;
+}
+.top-info .info-item .label {
+  margin-right: 12rpx;
+}
+.center-area {
+  display: flex;
+  color: #333;
+}
+
+.center-area .item {
+  padding: 36rpx 0 35rpx 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-area .item .label text {
+  font-size: 14px;
+}
+.center-area .item .number {
+  margin-top: 18rpx;
+}
+.center-area .item .number text {
+  font-size: 18px;
+}
+
+.top-area .inner {
+  display: flex;
+  align-items: center;
+}
+
+.top-area .inner .content {
+  margin-left: 26rpx;
+  flex: 1;
+}
+
+.avator {
+  width: 34px;
+  height: 34px;
+}
+
+.avator image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.vip-detail{
+  font-size: 18px;
+  color: #FFCC99;
+  font-weight: bold;
+  font-style: italic;
+  font-family: PingFang-SC-Bold;
+  }
+ .no-padding-text .name-text{font-size: 15px;color: #333}
+ .desc.no-padding-text{padding-top: 4px}
+
+ .bottom-area .head {
+  padding: 29rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #808080;
+  background-color: #f2f4f7;
+}
+.list-block {
+  color: #333;
+}
+.list-block .each-line {
+  position: relative;
+  padding: 37rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-block .each-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #ddd;
+  border-bottom-width: 1px;
+  right: 0;
+}
+
+.list-block .each-line.last::after {
+  border-bottom-width: 0;
+}
+
+.keepdate-name-y1 {
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 5rpx 5rpx 30rpx #5975ff;
+  position: fixed;
+  bottom: 46rpx;
+  left: 50%;
+  margin-left: -60rpx;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* 自定义弹窗 */
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.courseone-pic {
+  width: 120rpx;
+  height: 120rpx;
+  border: 10rpx solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -60rpx;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -70rpx;
+}
+
+.courseone-drawer {
+  text-align: center;
+  margin: 80rpx auto 0;
+  font-size: 42rpx;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.drawer_box {
+  top: 50%;
+  margin-top: -173rpx;
+  margin-left: 75rpx;
+  width: 600rpx;
+  height: 346rpx;
+  z-index: 9999;
+  background-color: #fff;
+  border-radius: 20rpx;
+  position: fixed;
+}
+
+.btn_ok {
+  padding: 20rpx 0;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  color: #fff;
+  background-color: #5c5be3;
+  width: 466rpx;
+  margin: 60rpx auto;
+  border-radius: 5rpx;
+}

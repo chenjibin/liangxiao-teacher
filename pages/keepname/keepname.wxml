@@ -1,0 +1,48 @@
+<!--pages/keepname/keepname.wxml-->
+<!--pages/teacher-detail/index.wxml-->
+<view class='teacher-detail'>
+  <view class='top-area'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'>
+          <text class='name-text'>霹雳舞高级训练班</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>南山校区</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='teacher-class'>
+    <view class='title no-padding-text'>
+      <text>共 50 个在读学员</text>
+    </view>
+    <!--pages/test-component/index.wxml-->
+    <view class='test-block'>
+      <choose-student stuData='{{stuData}}' bind:item-change='stuChange' bind:show-info='showInfo'></choose-student>
+    </view>
+    </view>
+  </view>
+  <!-- anniu -->
+  <view class="qiandao-comm">
+    <text class="dm-people">已选 {{arrLenght}} 个学员</text>
+    <!-- 自定义弹框 -->
+    <!--button-->
+    <view class="qiandao-btn" bindtap="powerDrawer" data-statu="open">点名签到</view>
+  </view>
+  <!--mask-->
+  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" catchtouchmove="ture" wx:if="{{showModalStatus}}"></view>
+  <!--content-->
+  <!--使用animation属性指定需要执行的动画-->
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+    <!--drawer content-->
+    <view class="drawer_title">
+      <image class="courseone-pic" src="/images/success-bigchecked.png"></image>
+      <text class="courseone-drawer">签到成功！</text>
+    </view>
+    <view class="btn_ok" bindtap="powerDrawer" data-statu="close">确定</view>
+</view>

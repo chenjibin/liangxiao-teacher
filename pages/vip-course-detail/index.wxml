@@ -1,0 +1,72 @@
+
+<!--pages/my-course-detail/inde.wxml-->
+<view class='my-course-detail'>
+  <view class='top-area'>
+    <view class='top-line'>
+      <view class='img-wrap'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content-wrap'>
+        <view class='title no-padding-text'>
+          <text>街舞幼儿02班</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>双子之星</text>
+          <text style='margin-left: 16rpx;'>15018745877</text>
+        </view>
+      </view>
+    </view>
+    <view class='top-info'>
+      <view class='no-padding-text info-item'>
+        <text class='label'>上课时间:</text>
+        <text class='content'>每周二、四下午4点</text>
+      </view>
+      <view class='no-padding-text info-item' style='margin-bottom: 0;'>
+        <text class='label'>课时消耗:</text>
+        <text class='content'>2/节</text>
+      </view>
+    </view>
+  </view>
+  <view class='top-area top-white'>
+    <view class='inner'>
+      <view class='avator'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='content'>
+        <view class='name no-padding-text'>
+          <text class='name-text'>小宝子</text>
+          <text style='padding:0 15rpx;'>男</text>
+          <text>10岁</text>
+        </view>
+        <view class='desc no-padding-text'>
+          <text>138000138000</text>
+        </view>
+      </view>
+      <view class='vip-detail'>
+          <text>VIP学员</text>
+      </view>
+    </view>
+  </view>
+        <view class='bottom-area'>
+          <view class='head no-padding-text'>
+            <text>签到时间</text>
+          </view>
+          <view class='list-block'>
+            <view class='each-line no-padding-text' bindtap="keepnamelist">
+              <text>今天18:00</text>
+            </view>
+            <view class='each-line no-padding-text'>
+              <text>今天18:00</text> 
+            </view>
+    </view>       
+</view>
+  <view class="keepdate-name-y1" bindtap='powerDrawer' data-statu="open" style='background-image: url("http://tm.xyyzi.com:9099/oa/test/btn-bg-01.png")'>签到</view>
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> 
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+ <view class="drawer_title">
+ <image class="courseone-pic"  src="/images/success-bigchecked.png"></image>
+  <text class="courseone-drawer">签到成功！</text> 
+ </view> 
+ <view class="btn_ok" bindtap="powerDrawer" data-statu="close">确定</view> 
+</view>
+</view>

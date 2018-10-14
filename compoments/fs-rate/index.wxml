@@ -1,0 +1,6 @@
+<!--compoments/fs-rate/index.wxml-->
+<view class='commont-star' >
+  <block wx:for='{{ fullPoint }}' wx:key='item'>
+    <image src='{{item + 1 <= level ? "../../images/star-active.png" : "../../images/star-default.png"}}' class='icon {{size === "small" ? "" : "large"}}' bindtap='starClickHandler' data-starnum='{{item + 1}}'></image>
+  </block>
+</view>

@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/my-course-detail/index",
+    "pages/my-course-record/index",
+    "pages/vip-course-detail/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/login/error",
+    "pages/keepname/keepname-list/keepname-list",
+    "pages/keepname/keepname",
+    "pages/my/index",
+    "pages/class-record/index",
+    "pages/teacher-list/index",
+    "pages/teacher-detail/index",
+    "pages/course-list/index",
+    "pages/my/course",
+    "pages/fees/list",
+    "pages/fees/detail",
+    "pages/my/info",
+    "pages/order-list/index",
+    "pages/register/index",
+    "pages/register/success"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "卡乐少儿街舞",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#8a9099",
+    "selectedColor": "#5b5be3",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/class-record/index",
+        "iconPath": "images/icon-class.png",
+        "selectedIconPath": "images/icon-class-active.png",
+        "text": "上课记录"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "images/icon-my.png",
+        "selectedIconPath": "images/icon-my-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

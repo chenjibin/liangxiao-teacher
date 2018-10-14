@@ -1,0 +1,72 @@
+/* pages/my-course-record/index.wxss */
+.top-area {
+  padding: 30rpx 33rpx;
+  color: #808080;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-line {
+  display: flex;
+  align-items: center;
+}
+
+.top-line .img-wrap {
+  flex: 0 0 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.top-line .img-wrap image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.content-wrap {
+  flex: 1;
+  margin-left: 15rpx;
+}
+.content-wrap .title {
+  margin-bottom: 12rpx;
+}
+.content-wrap .title text {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+
+
+.bottom-area .head {
+  padding: 29rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #808080;
+  background-color: #f2f4f7;
+}
+.list-block {
+  color: #333;
+}
+.list-block .each-line {
+  position: relative;
+  padding: 37rpx 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-block .each-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #ddd;
+  border-bottom-width: 1px;
+  right: 0;
+}
+
+.list-block .each-line.last::after {
+  border-bottom-width: 0;
+}

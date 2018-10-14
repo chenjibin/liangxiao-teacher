@@ -1,0 +1,14 @@
+/* compoments/dance-cell/index.wxss */
+.dance-cell {
+  display: flex;
+  align-items: center;
+}
+
+.dance-cell .icon-block {
+  margin-right: 20rpx;
+}
+
+.dance-cell .main-block {
+  flex: 1;
+
+}

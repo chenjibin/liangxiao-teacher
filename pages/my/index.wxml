@@ -1,0 +1,83 @@
+<!--pages/my/index.wxml-->
+
+<view class='my-page'>
+  <!-- 我的 -->
+  <view class="mine" style="">
+    <view class="mine-name" bindtap='toPage' data-url='/pages/my/info'>
+       <view class='minepic'>
+          <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+        </view>
+      <text>袁行</text>
+    </view>
+    <view class="mine-star">
+      <image src="/images/fase.png"></image>
+      <text>4.5</text>
+    </view>
+
+    <!-- 星 -->
+    <view class='str-comm'>
+      <view class="mine-sj">
+        <view class="mine-sj1">
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+        </view>
+        <view class="mine-sj2">
+          <view class="mine-w"></view>
+          <view class="mine-y"></view>
+        </view>
+        <text class="mine-sj3">50.2%</text>
+      </view>
+      <view class="mine-sj">
+        <view class="mine-sj1">
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+        </view>
+        <view class="mine-sj2">
+          <view class="mine-w"></view>
+          <view class="mine-y"></view>
+        </view>
+        <text class="mine-sj3">50.2%</text>
+      </view>
+      <view class="mine-sj">
+        <view class="mine-sj1">
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+        </view>
+        <view class="mine-sj2">
+          <view class="mine-w"></view>
+          <view class="mine-y"></view>
+        </view>
+        <text class="mine-sj3">50.2%</text>
+      </view>
+      <view class="mine-sj">
+        <view class="mine-sj1">
+          <image class="sjpic" src="/images/xx.png"></image>
+          <image class="sjpic" src="/images/xx.png"></image>
+        </view>
+        <view class="mine-sj2">
+          <view class="mine-w"></view>
+          <view class="mine-y"></view>
+        </view>
+        <text class="mine-sj3">50.2%</text>
+      </view>
+      <view class="mine-sj">
+        <view class="mine-sj1">
+          <image class="sjpic" src="/images/xx.png"></image>
+        </view>
+        <view class="mine-sj2">
+          <view class="mine-w"></view>
+          <view class="mine-y"></view>
+        </view>
+        <text class="mine-sj3">50.2%</text>
+      </view>
+    </view>
+    <text class="mine-he">—— 共 358 人次评分 ——</text>
+  </view>
+  <text class="qiehuan" bindtap="returnList">切换账号 > </text>
+</view>

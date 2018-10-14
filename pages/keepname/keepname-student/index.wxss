@@ -1,0 +1,195 @@
+/* compoments/choose-student/index.wxss */
+.border-1px {
+  position: relative;
+}
+
+.border-1px::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e6e6e6;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  right: 0;
+  border-radius: 20rpx;
+}
+.no-padding-text {
+  font-size: 0;
+}
+
+.no-padding-text text {
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.choose-student-radio {
+}
+
+.choose-student-radio .radio-item {
+  display: inline-block;
+  padding: 0 10rpx;
+  margin-bottom: 10rpx;
+  box-sizing: border-box;
+  position: relative;
+  width: 25%;
+}
+
+.choose-student-radio .radio-item .inner {
+  position: relative;
+  width: 100%;
+  padding-top: 120%;
+  background-color: #fff;
+}
+
+.choose-student-radio .radio-item .inner .in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.choose-student-radio .radio-item .avator {
+  font-size: 0;
+  margin-bottom: 16rpx;
+}
+
+.choose-student-radio .radio-item .avator image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.check-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  opacity: 0;
+}
+
+.choose-student-radio .radio-item.checked .success-check {
+  visibility: visible;
+  opacity: 1;
+}
+
+.success-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background-color: rgba(25, 25, 51, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.success-check image {
+  width: 20px;
+  height: 20px;
+}
+
+.info {
+  padding: 24rpx 42rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 95%);
+  z-index: 400;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.info.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.info .span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent #e6e6e6;
+  position: absolute;
+  z-index: 500;
+  top: -8px;
+  left: 50%; /* 三角形居中显示 */
+  margin-left: -8px; /* 三角形居中显示 */
+}
+
+.info .em {
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  position: absolute;
+  z-index: 500;
+  top: 1px;
+  left: -8px;
+}
+
+/* .info::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -10rpx;
+  width: 0;
+  height: 0;
+  border-left: 15rpx solid transparent;
+  border-right: 15rpx solid transparent;
+  border-bottom: 15rpx solid #fff;
+} */
+
+.info .some text {
+  font-size: 12px;
+  color: #808080;
+}
+
+.info .some {
+  margin-top: 13rpx;
+  margin-bottom: 13rpx;
+}
+
+.info .some .sex {
+  margin-right: 8rpx;
+}
+
+.info .phone text {
+  font-size: 12px;
+  color: #808080;
+}

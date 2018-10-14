@@ -1,0 +1,44 @@
+/* compoments/fs-modal/index.wxss */
+
+.fs-modal {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  outline: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transform: translateZ(1px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fs-modal.fs-modal-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fs-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fs-modal-mask.fs-modal-mask-show {
+  opacity: 1;
+  visibility: visible;
+}

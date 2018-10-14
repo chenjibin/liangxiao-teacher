@@ -1,0 +1,181 @@
+/* pages/keepname/keepname.wxss */
+page{background-color: #f2f4f7}
+
+
+.top-area {
+  /* padding: 40rpx 32rpx; */
+  background-color: #fff;
+  color: #333;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  box-sizing: border-box;
+  z-index: 999
+}
+
+.top-area .inner {
+  display: flex;
+  align-items: center;
+  padding-left: 32rpx;
+}
+
+.top-area .inner .content {
+  margin-left: 26rpx;
+}
+
+.avator {
+  width: 40px;
+  height: 40px;
+}
+
+.avator image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name .name-text {
+  margin-bottom: 12rpx;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.desc {
+  color: #808080
+}
+
+.teacher-class {
+  padding: 31rpx 28rpx;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.teacher-class .title {
+  margin-bottom: 31rpx;
+  text-align: center
+}
+
+.teacher-class .title text {
+  font-size: 12px;
+  color: #808080;
+}
+
+.keepcomm {
+  display: flex;
+  box-sizing: border-box;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: 686rpx;
+  margin-bottom: 180rpx;
+}
+
+.keepcomm-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 32rpx 0;
+  width: 156rpx;
+  height: 186rpx;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 20rpx;
+  margin-right: 21rpx
+}
+.keepcomm-active{margin-right: 0}
+.zhezhao {
+  position: absolute;
+  top: 0;
+  width: 158rpx;
+  height: 186rpx;
+  background-color: rgba(25, 25, 51, 0.7);
+  display: none
+}
+
+.zhezhao image {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 74rpx 58rpx;
+}
+
+.xinxi {
+  width: 240rpx;
+  height: 160rpx;
+  background-size: 240rpx 160rpx;
+  position: absolute;
+  bottom: -131rpx;
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow:0px 6px 10px RGBA(65, 63, 202, 0.05);
+  display: none;
+}
+
+.xinxi text {
+  display: block;
+  font-size: 12px;
+  color: rgba(128, 128, 128, 1);
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.xinxi .xinxiname {
+  font-size: 15px;
+  color: #333;
+}
+
+.xinxicomm {
+  padding: 22rpx 44rpx;
+}
+
+.keepure {
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 16rpx;
+  color: #333;
+  display: block;
+  text-align: center;
+}
+
+.xinxi.hide.show{ 
+ display: block;
+}
+/* 签到 */
+
+.qiandao-comm {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 20rpx;
+  background-color: #fff;
+  box-shadow: 10rpx 0 10rpx #f1f3f6;
+}
+
+.qiandao-btn {
+  border-radius: 4px;
+  background-color: #5b5be3;
+  color: #fff;
+  border: none;
+  width: 93%;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.dm-people {
+  font-size: 12px;
+  color: #808080;
+  padding-bottom: 18rpx;
+  display: block;
+}
+
+

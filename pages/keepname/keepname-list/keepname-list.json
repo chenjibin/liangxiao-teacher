@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "签到学员",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "choose-student": "../keepname-student/index"
+  }
+}
