@@ -55,6 +55,12 @@ class apis {
     return this._request.postRequest(this._baseUrl + 'sign/up/organizer', data).then(res => res.data)
   }
   /**
+   * 获取短信验证码
+   */
+  verifyPhoneMessage(phone, data) {
+    return this._request.postRequest(`${this._baseUrl}sign/verify/phone/${phone}`, data).then(res => res.data)
+  }
+  /**
    * 首页
    */
   // teacherCourse() {

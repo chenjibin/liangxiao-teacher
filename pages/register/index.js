@@ -20,23 +20,31 @@ Page({
       return
     }
     if (this.data.canGet) {
-      this.setData({
-        canGet: false,
-        setTime: this.data.setTime - 1
-      })
-      this.data.timmer = setInterval(() => {
-        if (this.data.setTime === 0) {
-          clearInterval(this.data.timmer)
-          this.setData({
-            canGet: true,
-            setTime: 30
-          })
+      app.apis.verifyPhoneMessage(Number(this.data.phoneNumber), {}).then(res => {
+        if (!res.code) {
+          $Toast({
+            content: res.msg
+          });
         } else {
           this.setData({
+            canGet: false,
             setTime: this.data.setTime - 1
           })
+          this.data.timmer = setInterval(() => {
+            if (this.data.setTime === 0) {
+              clearInterval(this.data.timmer)
+              this.setData({
+                canGet: true,
+                setTime: 30
+              })
+            } else {
+              this.setData({
+                setTime: this.data.setTime - 1
+              })
+            }
+          }, 1000)
         }
-      }, 1000)
+      })
     }
   },
   phoneChangeHander({ detail }) {
