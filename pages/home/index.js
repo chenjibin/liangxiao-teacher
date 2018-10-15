@@ -8,9 +8,6 @@ Page({
    */
   data: {
     imgUrls: [
-      '/images/banner-img.png',
-      '/images/banner-img.png',
-      '/images/banner-img.png',
       '/images/banner-img.png'
     ],
     swiperCurrent: 0,

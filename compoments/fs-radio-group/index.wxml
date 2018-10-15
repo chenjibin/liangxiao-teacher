@@ -1,0 +1,14 @@
+<!--compoments/fs-radio-group/index.wxml-->
+<radio-group class="fs-radio-group" bindchange="radioChange">
+  <view class="radio-item {{item.value === value? 'checked': ''}}" wx:for="{{itemData}}" wx:key="{{item.value}}">
+    <view class='inner'>
+      <view class='label no-padding-text'>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='check-img'>
+        <image src='../../images/success-checked.png'></image>
+      </view>
+    </view>
+    <radio value="{{item.value}}" checked="{{item.value === value}}" class='radio-cover' />
+  </view>
+</radio-group>

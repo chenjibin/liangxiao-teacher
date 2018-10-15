@@ -5,15 +5,20 @@
       <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <swiper-item class='banner-img-item'>
           <view class='banner-img-wrap'>
-            <image src="{{item}}" class="banner-img" />
+            <!-- <image src="{{item}}" class="banner-img" /> -->
+            <view class='inshi-banner'>
+            <text class='hen'>=</text>
+            <text class='main'>良校管家</text>
+            <text class='hen'>=</text>
+            </view>
           </view>
         </swiper-item>
       </block>
     </swiper>
   </view>
-  <view class='fs-swiper-dot'>
+  <!-- <view class='fs-swiper-dot'>
     <text class='dot {{swiperCurrent === index ? "active": ""}}' wx:for="{{imgUrls}}" wx:key="{{index}}"></text>
-  </view>
+  </view> -->
   <view class='each-block teacher'>
     <view class='title'>
       <text>在教教程</text>
