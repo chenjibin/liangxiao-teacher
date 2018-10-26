@@ -74,15 +74,12 @@ Page({
       //   url: '/pages/home/index'
       // })
     }
-    if (!sendData.companyId) {
-      $Toast({
-        content: '机构不能为空！'
-      });
-      return
-      // wx.switchTab({
-      //   url: '/pages/home/index'
-      // })
-    }
+    // if (!sendData.companyId) {
+    //   $Toast({
+    //     content: '机构不能为空！'
+    //   });
+    //   return
+    // }
       wx.switchTab({
         url: '/pages/home/index'
       })

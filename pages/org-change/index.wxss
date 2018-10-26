@@ -1,0 +1,51 @@
+/* pages/org-change/index.wxss */
+page {
+  background-color: #f2f4f7;
+}
+
+.org-change-page {
+  padding: 20rpx 32rpx;
+}
+
+.each-item {
+  margin-bottom: 20rpx;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+
+.each-item .inner {
+  display: flex;
+  align-items: center;
+}
+
+.icon-img {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.checked-img {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.checked-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.org-name {
+  flex: 1;
+  margin-left: 28rpx;
+}
+
+.org-name text {
+  color: #333;
+  font-size: 15px;
+}

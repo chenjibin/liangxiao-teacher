@@ -21,11 +21,13 @@
     "pages/my/info",
     "pages/order-list/index",
     "pages/register/index",
-    "pages/register/success"
+    "pages/register/success",
+    "pages/my/setting",
+    "pages/org-change/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "卡乐少儿街舞",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "backgroundTextStyle": "light"
   },

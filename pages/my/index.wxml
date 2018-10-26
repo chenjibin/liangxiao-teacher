@@ -2,7 +2,10 @@
 
 <view class='my-page'>
   <!-- 我的 -->
-  <view class="mine" style="">
+  <view class="mine">
+    <view class='setting-btn' bindtap="returnList">
+     <image src='/images/setting-icon-my.png' class='setting-icon'></image>
+    </view>
     <view class="mine-name" bindtap='toPage' data-url='/pages/my/info'>
        <view class='minepic'>
           <image src='/images/user_avator.png'></image>
@@ -79,5 +82,5 @@
     </view>
     <text class="mine-he">—— 共 358 人次评分 ——</text>
   </view>
-  <text class="qiehuan" bindtap="returnList">切换账号 > </text>
+  <!-- <text class="qiehuan" bindtap="returnList">切换账号 > </text> -->
 </view>

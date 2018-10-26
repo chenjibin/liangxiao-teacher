@@ -142,3 +142,26 @@ border-radius:50%;
   font-size: 24rpx;
   padding: 20rpx;
 }
+
+.setting-btn {
+  position: absolute;
+  right: 40rpx;
+  top: 60rpx;
+  font-size: 0;
+  padding: 20rpx;
+}
+.setting-btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  padding: 10px;
+}
+
+.setting-btn .setting-icon {
+  width: 19px;
+  height: 19px;
+}

@@ -1,0 +1,16 @@
+<!--pages/org-change/index.wxml-->
+<view class='org-change-page'>
+  <view class='each-item' bindtap='chooseItem' wx:for='{{companyList}}' wx:key='{{item.companyId}}' data-company='{{item}}'>
+    <view class='inner'>
+      <view class='icon-img'>
+        <image src='http://tm.xyyzi.com:9099/oa/upload/head/1526527828992.png'></image>
+      </view>
+      <view class='org-name no-padding-text'>
+        <text>{{item.companyName}}</text>
+      </view>
+      <view class='checked-img' wx:if='{{item.companyId == currentCompany.companyId}}'>
+        <image src='../../images/success-checked.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

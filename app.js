@@ -36,6 +36,7 @@ App({
   },
   apis: new apis(),
   globalData: {
-    userInfo: null
+    userInfo: null,
+    currentOrganize: null
   }
 })

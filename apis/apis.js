@@ -60,42 +60,5 @@ class apis {
   verifyPhoneMessage(phone, data) {
     return this._request.postRequest(`${this._baseUrl}sign/verify/phone/${phone}`, data).then(res => res.data)
   }
-  /**
-   * 首页
-   */
-  // teacherCourse() {
-  //   return this._request.postRequest(this._baseUrl + 'studentManage/getCourseByTeacherId', data).then(res => res.data)
-  // }
-  /**
-   * 上课记录评价
-   */
-  // setCourseScore() {
-  //   return this._request.postRequest(this._baseUrl + 'studentManage/setCourseScore', data).then(res => res.data)
-  // }
-  // /**
-  //  * 查询所有新闻列表
-  //  */
-  // getNews(page = 1, size = 10) {
-  //   let data = {
-  //     page,
-  //     size
-  //   }
-  //   return this._request.getRequest(this._baseUrl + 'news/client', data).then(res => res.data)
-  // }
-
-  // /**
-  //  * 获取所有课程
-  //  */
-  // getCourseList(page = 1, size = 10, key = null) {
-  //   let data = key != null ? {
-  //     page: page,
-  //     size: size,
-  //     queryValue: key
-  //   } : {
-  //     page: page,
-  //     size: size
-  //   }
-  //   return this._request.getRequest(this._baseUrl + '/course/mobile', data).then(res => res.data)
-  // }
 }
 export default apis

@@ -1,34 +1,50 @@
-// pages/my/index.js
+// pages/org-change/index.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    companyList: [],
+    currentCompany: {}
   },
-  toPage({currentTarget}) {
-    wx.navigateTo({
-      url: currentTarget.dataset.url
+  chooseItem({currentTarget}) {
+    app.setGlobalData('currentOrganize', currentTarget.dataset.company);
+    wx.setStorageSync('currentOrganize', currentTarget.dataset.company);
+    wx.reLaunch({
+      url: '/pages/my/index'
+    })
+    // wx.navigateBack({
+    //   delta: 1
+    // })
+  },
+  getOrgList() {
+    const studentId = app.globalData.userInfo.studentId
+    app.apis.getUserOrganizeList({ studentId }).then(res => {
+      if (res.code) {
+        this.setData({
+          'companyList': res.data
+        })
+      }
     })
   },
-  returnList() {
-    wx.navigateTo({
-      url: './setting',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showNavigationBarLoading()
+    this.setData({
+      'currentCompany': app.globalData.currentOrganize
+    })
+    this.getOrgList()
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    wx.hideNavigationBarLoading()
+  
   },
 
   /**

@@ -25,10 +25,10 @@
           <text class='no' wx:else>重新获取({{setTime}}s)</text>
         </view>
       </view>
-      <view class="each-line">
+      <!-- <view class="each-line">
         <image src='../../images/login-codename.png' class='input-icon'></image>
         <input name="companyId" bindinput='getOrganization' placeholder="机构代码" maxlength='11' class='login-input' type='number' placeholder-style='color:b3b3b3' />
-      </view>
+      </view> -->
       <view class="btn-area">
         <button formType="submit" class="login-btn">登录</button>
       </view>

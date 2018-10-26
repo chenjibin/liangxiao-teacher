@@ -1,7 +1,7 @@
 {
   "navigationBarBackgroundColor": "#5B5BE3",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "校联在线",
+  "navigationBarTitleText": " 良校教师",
   "usingComponents": {
     "i-toast": "../../libs/iview/toast/index"
   }
