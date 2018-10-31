@@ -25,7 +25,7 @@ Page({
         courseId: 1,
         courseName: '宝宝②班',
         teacherId: 1,
-        teacherName: '刘亦篪',
+        teacherName: 3,
         score: 0,
         signTime: '今天 18：00'
       },
@@ -34,7 +34,7 @@ Page({
         courseId: 1,
         courseName: 'locking基础小班2',
         teacherId: 1,
-        teacherName: '张涵博',
+        teacherName: 5,
         score: 0,
         signTime: '昨天 18：00'
       },
@@ -43,7 +43,7 @@ Page({
         courseId: 1,
         courseName: 'locking基础小班2',
         teacherId: 1,
-        teacherName: '卞玉轩',
+        teacherName: 5,
         score: 3,
         signTime: '前天 18：00'
       },
@@ -52,7 +52,7 @@ Page({
         courseId: 1,
         courseName: '宝宝②班',
         teacherId: 1,
-        teacherName: '陈俊宇',
+        teacherName: 4,
         score: 4,
         signTime: '06-05 18：00'
       }

@@ -15,7 +15,7 @@
               <text>{{item.courseName}}</text>
             </view>
             <view class='teacher-name'>
-              <text class='label'>签到学员:</text>
+              <text class='label'>签到人数:</text>
               <text>{{item.teacherName}}</text>
             </view>
           </view>
