@@ -1,0 +1,22 @@
+<!--pages/my/setting.wxml-->
+<view>
+    <view class='my-each-item no-border' bindtap='toPage' data-url='/pages/org-change/index'>
+      <view class='inner'>
+        <view class='icon-wrap'>
+          <image src='../../images/org-icon.png'></image>
+        </view>
+        <view class='title no-padding-text'>
+          <text>组织</text>
+        </view>
+        <view class='org-name no-padding-text'>
+          <text>{{currentOrganizeName}}</text>
+        </view>
+        <view class='right-icon-wrap'>
+          <image src='../../images/arrow-right-dark.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='logout-btn no-padding-text'catchtap='logOut'>
+    <text>退出</text>
+  </view>

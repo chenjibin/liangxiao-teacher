@@ -1,0 +1,73 @@
+/* pages/my/setting.wxss */
+page {
+  background-color: #f2f4f7;
+}
+.my-each-item .inner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e6e6e6;
+  border-bottom-width: 1px;
+  right: 0;
+}
+
+.my-each-item.no-border .inner::after {
+  border-bottom-width: 0;
+}
+
+.icon-wrap {
+  font-size: 0;
+}
+
+.icon-wrap image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.my-each-item .org-name {
+  margin-right: 20rpx;
+  color: #b3b3b3;
+}
+.right-icon-wrap image {
+  width: 10rpx;
+  height: 17rpx;
+}
+.right-icon-wrap {
+  font-size: 0;
+}
+.my-each-item {
+  margin-top: 20rpx;
+  padding: 0 36rpx;
+  background-color: #fff;
+}
+
+.my-each-item .inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 41rpx 0;
+  /* border-bottom: 1rpx solid #ddd; */
+}
+
+.my-each-item .title {
+  margin-left: 19rpx;
+  flex: 1;
+}
+.logout-btn {
+  margin-top: 20rpx;
+  padding: 41rpx 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.logout-btn text {
+  font-size: 15px;
+  color: #ff4c6a;
+}
