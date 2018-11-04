@@ -2,6 +2,9 @@ class request {
   constructor(header) {
     this._header = header
   }
+  setCookie(data) {
+    this._header.Cookie = `JSESSIONID=${data}`
+  }
 
   /**
    * 设置统一的异常处理

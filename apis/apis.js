@@ -11,6 +11,9 @@ class apis {
     this._request = new request(this._defaultHeader)
     this._request.setErrorHandler(this.errorHander)
   }
+  setCookie(data) {
+    this._request.setCookie(data)
+  }
 
   /**
    * 统一的异常处理方法
