@@ -5,9 +5,6 @@ class apis {
     this._defaultHeader = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
-    // http://result.eolinker.com/z4RAcFIffee48fe3a9d96eeb416e04ed53abb77ed13c73b?uri=/xcx/user/studentLogin
-    // http://www.keshiguanjia.com
-    // http://zxkwxtest.s1.natapp.cc
     this._request = new request(this._defaultHeader)
     this._request.setErrorHandler(this.errorHander)
   }

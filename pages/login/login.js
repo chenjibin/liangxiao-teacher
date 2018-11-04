@@ -10,16 +10,12 @@ Page({
     canGet: true,
     setTime: 30,
     timmer: null,
-    phoneNumber: '',
-    getOrganization:''
+    phoneNumber: ''
   },
   toRegister() {
     wx.navigateTo({
       url: '../register/index'
     })
-  },
-  getOrganization: function (e) {
-    this.data.getOrganization = e.detail.value
   },
   phoneChangeHander({ detail }) {
     const phoneNumber = detail.value
@@ -61,94 +57,99 @@ Page({
         content: '手机号码不能为空！'
       });
       return
-      // wx.switchTab({
-      //   url: '/pages/home/index'
-      // })
     }
     if (!sendData.verifyCode) {
       $Toast({
         content: '验证码不能为空！'
       });
       return
+    }
       // wx.switchTab({
       //   url: '/pages/home/index'
       // })
-    }
-    // if (!sendData.companyId) {
-    //   $Toast({
-    //     content: '机构不能为空！'
-    //   });
-    //   return
-    // }
-      wx.switchTab({
-        url: '/pages/home/index'
+      app.apis.userLogin(sendData).then(res => {
+          if (res.code) {
+              app.apis.setCookie(res.data.sessionId);
+              app.setGlobalData('userInfo', res.data.userInfo);
+              wx.setStorageSync('userInfo', res.data.userInfo);
+              wx.setStorageSync('sessionId', res.data.sessionId);
+              let studentId = res.data.studentId;
+              app.apis.getUserOrganizeList({studentId}).then(resp => {
+                  if (resp.code) {
+                      app.setGlobalData('currentOrganize', resp.data[0]);
+                      wx.setStorageSync('currentOrganize', resp.data[0]);
+                      wx.switchTab({
+                          url: '/pages/home/index'
+                      })
+                  }
+              })
+          } else {
+              if (res.msg === '您还未注册') {
+                  wx.navigateTo({
+                      url: './error'
+                  })
+              } else {
+                  $Toast({
+                      content: res.msg
+                  });
+              }
+          }
       })
-    // app.apis.userLogin(sendData).then(res => {
-    //   if (res.code) {
-
-    //   }
-    //   console.log(res)
-    // })
-    // else {
-    //   wx.navigateTo({
-    //     url: './error'
-    //   })
-    // }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })
