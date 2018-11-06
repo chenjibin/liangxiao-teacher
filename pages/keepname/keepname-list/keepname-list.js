@@ -106,7 +106,7 @@ Page({
     // 第5步：设置定时器到指定时候后，执行第二组动画 
     setTimeout(function () {
       // 执行第二组动画 
-      animation.opacity(1).rotateX(0).step();
+      animation.opacity(1).step();
       // 给数据对象储存的第一组动画，更替为执行完第二组动画的动画对象 
       this.setData({
         animationData: animation
