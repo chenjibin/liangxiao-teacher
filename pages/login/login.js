@@ -64,34 +64,37 @@ Page({
       });
       return
     }
-    app.apis.userLogin(sendData).then(res => {
-      if (res.code) {
-        app.apis.setCookie(res.data.sessionId);
-        app.setGlobalData('userInfo', res.data.userInfo);
-        wx.setStorageSync('userInfo', res.data.userInfo);
-        wx.setStorageSync('sessionId', res.data.sessionId);
-        let studentId = res.data.studentId;
-        app.apis.getUserOrganizeList({studentId}).then(resp => {
-          if (resp.code) {
-            app.setGlobalData('currentOrganize', resp.data[0]);
-            wx.setStorageSync('currentOrganize', resp.data[0]);
-            wx.switchTab({
-              url: '/pages/home/index'
-            })
-          }
-        })
-      } else {
-        if (res.msg === '您还未注册') {
-          wx.navigateTo({
-            url: './error'
-          })
-        } else {
-          $Toast({
-            content: res.msg
-          });
-        }
-      }
+    wx.switchTab({
+      url: '/pages/home/index'
     })
+    // app.apis.userLogin(sendData).then(res => {
+    //   if (res.code) {
+    //     app.apis.setCookie(res.data.sessionId);
+    //     app.setGlobalData('userInfo', res.data.userInfo);
+    //     wx.setStorageSync('userInfo', res.data.userInfo);
+    //     wx.setStorageSync('sessionId', res.data.sessionId);
+    //     let studentId = res.data.studentId;
+    //     app.apis.getUserOrganizeList({studentId}).then(resp => {
+    //       if (resp.code) {
+    //         app.setGlobalData('currentOrganize', resp.data[0]);
+    //         wx.setStorageSync('currentOrganize', resp.data[0]);
+    //         wx.switchTab({
+    //           url: '/pages/home/index'
+    //         })
+    //       }
+    //     })
+    //   } else {
+    //     if (res.msg === '您还未注册') {
+    //       wx.navigateTo({
+    //         url: './error'
+    //       })
+    //     } else {
+    //       $Toast({
+    //         content: res.msg
+    //       });
+    //     }
+    //   }
+    // })
   },
 
   /**

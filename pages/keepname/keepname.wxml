@@ -31,18 +31,17 @@
     <text class="dm-people">已选 {{arrLenght}} 个学员</text>
     <!-- 自定义弹框 -->
     <!--button-->
-    <view class="qiandao-btn" bindtap="powerDrawer" data-statu="open">点名签到</view>
+    <view class="qiandao-btn {{canSingn ? '': 'disabled'}}" bindtap="signStu">点名签到</view>
   </view>
   <!--mask-->
-  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" catchtouchmove="ture" wx:if="{{showModalStatus}}"></view>
+  <view  class="drawer_screen" wx:if="{{showModalStatus}}"></view>
   <!--content-->
   <!--使用animation属性指定需要执行的动画-->
   <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
-
     <!--drawer content-->
     <view class="drawer_title">
       <image class="courseone-pic" src="/images/success-bigchecked.png"></image>
       <text class="courseone-drawer">签到成功！</text>
     </view>
-    <view class="btn_ok" bindtap="powerDrawer" data-statu="close">确定</view>
+    <view class="btn_ok" bindtap="comfirm" data-statu="close">确定</view>
 </view>

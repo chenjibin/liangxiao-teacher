@@ -24,7 +24,6 @@ Page({
     wx.navigateTo({
       url: "/pages/keepname/keepname?id=" + Teacherid
     })
-    console.log("/pages/keepname/keepname?id=" + Teacherid)
   },
   toTeacherList() {
     wx.navigateTo({
@@ -58,7 +57,7 @@ Page({
     // })
     const mock = [
       { courseId: 1, courseName: "宝宝②班", courseType: "1", campusId: 2, campusName: "10", signTime: "周二、周四17.00-18.30", status: 1 },
-      { courseId: 2, courseName: "locking基础小班2", courseType: "1", campusId: 2, campusName: "20", signTime: "周六、周日14.30-16.00", status: 0 }
+      { courseId: 2, courseName: "locking基础小班2", courseType: "1", campusId: 2, campusName: "20", signTime: "周六、周日14.30-16.00", status: 1 }
     ]
     this.setData({
       caselist: mock
